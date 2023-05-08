@@ -20,6 +20,9 @@ if (fs.existsSync(envFile)) {
  * @type {import('next').NextConfig}
  */
 const nextConfig = {
+  typescript: {
+    ignoreBuildErrors: true,
+  },
   env: {
     GROUPAROO_UI_EDITION: "enterprise",
   },

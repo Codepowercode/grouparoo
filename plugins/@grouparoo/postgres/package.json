@@ -30,6 +30,7 @@
   "dependencies": {
     "@grouparoo/app-templates": "0.9.0",
     "pg": "8.7.3",
+    "pg-types": "4.0.1",
     "pg-format": "1.0.4",
     "pg-hstore": "2.3.4",
     "postgres-date": "2.1.0"
@@ -40,6 +41,7 @@
     "@types/jest": "*",
     "@types/node": "16.*.*",
     "@types/pg": "*",
+    "@types/pg-types": "2.2.0",
     "@types/pg-format": "1.0.2",
     "@typescript-eslint/eslint-plugin": "5.13.0",
     "@typescript-eslint/parser": "5.13.0",

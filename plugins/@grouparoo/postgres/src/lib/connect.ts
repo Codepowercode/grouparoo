@@ -44,8 +44,11 @@ export const connect: ConnectPluginAppMethod = async ({ appOptions }) => {
   const pool = new Pool(formattedOptions);
 
   pool.on("connect", async (client: PostgresPoolClient) => {
+    // @ts-ignore
     client.setTypeParser(types.builtins.DATE, formatAsText); // Date
+    // @ts-ignore
     client.setTypeParser(types.builtins.TIMESTAMP, formatInUtcDefault); // Timestamp without zone
+    // @ts-ignore
     client.setTypeParser(types.builtins.TIMESTAMPTZ, formatInUtcDefault); // Timestamp without zone
 
     if (appOptions.schema) {

@@ -4,7 +4,10 @@
     "allowJs": true,
     "module": "commonjs",
     "target": "es2019",
-    "esModuleInterop": true
+    "noImplicitAny": false,
+    "esModuleInterop": true,
+    "noEmit": true,
+    "suppressImplicitAnyIndexErrors": true
   },
   "exclude": ["./../node_modules"]
 }

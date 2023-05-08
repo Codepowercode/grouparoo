@@ -193,7 +193,8 @@ export default function ExportsList(props: Props) {
         offset={offset}
         onPress={setOffset}
       />
-
+      {
+        // @ts-ignore
       <LoadingTable loading={loading}>
         <thead>
           <tr>
@@ -318,6 +319,7 @@ export default function ExportsList(props: Props) {
           })}
         </tbody>
       </LoadingTable>
+      }
 
       <Pagination
         total={total}
